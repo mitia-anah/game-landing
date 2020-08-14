@@ -1,0 +1,10 @@
+@import "../variable/font";
+@each $font in fonts {
+    @font-face {
+        font-family: map-get($font, 'family');
+        font-weight: map-get($font, 'weight');
+        font-style: map-get($font, 'style');
+        src: local("");
+        src: url("/webroot/fonts/#{map-get(filename)}.woff")
+    }
+}
