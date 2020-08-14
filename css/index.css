@@ -1,1 +1,17 @@
-@import "index.scss";
+html {
+  font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px; }
+
+body {
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+.mast_head {
+  background-image: url(../../webroot/images/angelina-andreas.png); }
+
+.mast_head--navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
