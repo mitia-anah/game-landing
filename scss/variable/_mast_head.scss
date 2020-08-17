@@ -2,9 +2,10 @@
     background-image: url(../../webroot/images/angelina-andreas.png);
 }
 
-;
-.mast_head--navigation {
+.navigation {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-between;
 }
+
+// .mast_head--navigation {}
