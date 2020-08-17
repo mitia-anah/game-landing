@@ -4,7 +4,13 @@ html {
 }
 
 body {
+    background-image: url(../../webroot/images/royal-img.png);
     margin: 0;
+}
+
+body>header {
+    background-image: url(../../webroot/images/angelina-andreas.png);
+    background-size: cover;
 }
 
 li {
