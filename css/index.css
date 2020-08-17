@@ -3,15 +3,52 @@ html {
   font-size: 16px; }
 
 body {
+  background-image: url(../../webroot/images/royal-img.png);
   margin: 0; }
+
+body > header {
+  background-image: url(../../webroot/images/angelina-andreas.png);
+  background-size: cover; }
 
 li {
   list-style: none; }
 
 .mast_head {
-  background-image: url(../../webroot/images/angelina-andreas.png); }
+  display: flex;
+  flex-direction: row; }
 
-.navigation {
+.main_header {
+  text-align: center; }
+
+.main_header h1,
+.main_header p {
+  color: white;
+  text-transform: uppercase; }
+
+.button {
+  background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+  border-radius: 2.94008px;
+  border-style: none;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center; }
+
+.scroll_button {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-block-start: 140px; }
+
+.scroll_button a {
+  color: white;
+  text-decoration: none; }
+
+.bunners {
+  display: flex;
+  color: white; }
+
+.bunners li {
+  font-size: 20px;
+  padding-inline-end: 3px; }
