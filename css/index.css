@@ -1,13 +1,24 @@
+@charset "UTF-8";
 html {
   font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px; }
 
 body {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  padding: 1rem;
+  position: relative; }
+
+main {
   background-image: url(../../webroot/images/royal-img.png);
-  margin: 0; }
+  background-repeat: no-repeat;
+  position: relative;
+  top: 571px;
+  background-size: cover; }
 
 body > header {
   background-image: url(../../webroot/images/angelina-andreas.png);
+  background-repeat: no-repeat;
   background-size: cover; }
 
 li {
@@ -16,6 +27,11 @@ li {
 .mast_head {
   display: flex;
   flex-direction: row; }
+
+.header {
+  width: 100%;
+  height: 571px;
+  position: absolute; }
 
 .main_header {
   text-align: center; }
@@ -49,6 +65,107 @@ li {
   display: flex;
   color: white; }
 
-.bunners li {
-  font-size: 20px;
-  padding-inline-end: 3px; }
+.bunners li::before {
+  content: "⚪"; }
+
+.sos {
+  text-align: center; }
+
+.sos_group--header,
+.sos_group--paragraph,
+.sos_content--paragraph {
+  color: #ffffff; }
+
+.sos_group--paragraph {
+  font-size: 33px;
+  text-transform: uppercase; }
+
+.feature {
+  text-align: center;
+  background-color: lightgrey; }
+
+.feature_title,
+.feature_title--paragraph,
+.feature_paragraph {
+  color: #ffffff; }
+
+.feature_title--paragraph {
+  font-size: 33px; }
+
+summary {
+  color: #FFB548;
+  font-size: 21px;
+  text-transform: uppercase; }
+
+.requirements {
+  text-align: center;
+  background-color: rgba(255, 192, 203, 0.5); }
+
+.requirement_title,
+.requerement_paragraph {
+  color: #ffffff;
+  text-transform: uppercase; }
+
+.requerement_paragraph {
+  font-size: 33px; }
+
+.testemonials {
+  text-align: center;
+  background-color: rgba(255, 255, 0, 0.5); }
+
+.testemonial_title,
+.testemonial_paragraph1,
+.testemonial_paragraph2 {
+  color: #ffffff; }
+
+.testemonial_title,
+.testemonial_paragraph1 {
+  text-transform: uppercase; }
+
+.testemonial_paragraph1 {
+  font-size: 33px; }
+
+.profile a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFB548;
+  font-size: 21px; }
+
+.subscribe {
+  text-align: center;
+  background-color: purple; }
+
+.subscribe_title,
+.subscribe_paragraph1,
+.subscribe_paragraph2 {
+  color: #ffffff; }
+
+.subscribe_title,
+.subscribe_paragraph1 {
+  text-transform: uppercase; }
+
+.subscribe_paragraph1 {
+  font-size: 33px; }
+
+.email_btn {
+  width: 290.5px;
+  height: 44px;
+  background-color: lightgrey;
+  border-radius: 2.94008px;
+  border-style: none; }
+
+.submit_btn {
+  width: 290.5px;
+  height: 44px;
+  background-color: #FFB548;
+  border-radius: 2.94008px;
+  border-style: none; }
+
+footer {
+  background-color: black;
+  padding-top: calc(100% * 3 / 4);
+  text-align: center; }
+
+.logo {
+  background-image: url(../../webroot/images/logo.png);
+  background-repeat: no-repeat; }
