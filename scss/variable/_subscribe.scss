@@ -1,0 +1,36 @@
+@import "../variable/variable";
+.subscribe {
+    text-align: center;
+    background-color: rgb(128, 0, 128);
+}
+
+.subscribe_title,
+.subscribe_paragraph1,
+.subscribe_paragraph2 {
+    color: $text-color;
+}
+
+.subscribe_title,
+.subscribe_paragraph1 {
+    text-transform: $uppercase-text;
+}
+
+.subscribe_paragraph1 {
+    font-size: $heading-size;
+}
+
+.email_btn {
+    width: $subscribe-buttons-width;
+    height: $subscribe-buttons-height;
+    background-color: lightgrey;
+    border-radius: $subscribe-border-radius;
+    border-style: none;
+}
+
+.submit_btn {
+    width: $subscribe-buttons-width;
+    height: $subscribe-buttons-height;
+    background-color: $summary-color;
+    border-radius: $subscribe-border-radius;
+    border-style: none;
+}

@@ -1,1 +1,15 @@
+@import "../variable/variable";
+.sos {
+    text-align: center;
+}
 
+.sos_group--header,
+.sos_group--paragraph,
+.sos_content--paragraph {
+    color: $text-color;
+}
+
+.sos_group--paragraph {
+    font-size: $heading-size;
+    text-transform: $uppercase-text;
+}

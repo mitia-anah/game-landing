@@ -1,0 +1,27 @@
+@import '../variable/variable';
+.testemonials {
+    text-align: center;
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+.testemonial_title,
+.testemonial_paragraph1,
+.testemonial_paragraph2 {
+    color: $text-color;
+}
+
+.testemonial_title,
+.testemonial_paragraph1 {
+    text-transform: $uppercase-text;
+}
+
+.testemonial_paragraph1 {
+    font-size: $heading-size;
+}
+
+.profile a {
+    text-decoration: none;
+    text-transform: $uppercase-text;
+    color: $testemonials-link;
+    font-size: $header-font-size;
+}

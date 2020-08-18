@@ -1,0 +1,15 @@
+@import "../variable/variable";
+.requirements {
+    text-align: center;
+    background-color: rgba(255, 192, 203, 0.5);
+}
+
+.requirement_title,
+.requerement_paragraph {
+    color: $text-color;
+    text-transform: $uppercase-text;
+}
+
+.requerement_paragraph {
+    font-size: $heading-size;
+}

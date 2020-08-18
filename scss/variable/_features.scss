@@ -1,0 +1,24 @@
+@import "../variable/variable";
+.feature {
+    text-align: center;
+    background-color: lightgrey
+}
+
+.feature_title,
+.feature_title--paragraph,
+.feature_paragraph {
+    color: $text-color;
+}
+
+.feature_title--paragraph {
+    font-size: $heading-size;
+}
+
+summary {
+    color: $summary-color;
+    font-size: $header-font-size;
+    text-transform: $uppercase-text;
+}
+
+// height: 1000vw * 388/343
+//width: 1000vw
