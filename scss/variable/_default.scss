@@ -8,21 +8,30 @@ body {
     margin-inline-start: auto;
     margin-inline-end: auto;
     padding: 1rem;
-    position: relative;
-}
-
-main {
-    background-image: url(../../webroot/images/royal-img.png);
-    background-repeat: no-repeat;
-    position: relative;
-    top: 571px;
-    background-size: cover;
 }
 
 body>header {
     background-image: url(../../webroot/images/angelina-andreas.png);
     background-repeat: no-repeat;
+    padding-top: 0;
+    position: relative;
     background-size: cover;
+    margin: 0 auto;
+}
+
+main {
+    background-image: url(../../webroot/images/royal-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    position: relative;
+}
+
+footer {
+    background-size: cover;
+    top: 0;
+    position: relative;
+    background-color: rgba($color: #000000, $alpha: 1.0);
 }
 
 li {

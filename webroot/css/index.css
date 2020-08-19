@@ -6,20 +6,28 @@ html {
 body {
   margin-inline-start: auto;
   margin-inline-end: auto;
-  padding: 1rem;
-  position: relative; }
-
-main {
-  background-image: url(../../webroot/images/royal-img.png);
-  background-repeat: no-repeat;
-  position: relative;
-  top: 571px;
-  background-size: cover; }
+  padding: 1rem; }
 
 body > header {
   background-image: url(../../webroot/images/angelina-andreas.png);
   background-repeat: no-repeat;
-  background-size: cover; }
+  padding-top: 0;
+  position: relative;
+  background-size: cover;
+  margin: 0 auto; }
+
+main {
+  background-image: url(../../webroot/images/royal-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  position: relative; }
+
+footer {
+  background-size: cover;
+  top: 0;
+  position: relative;
+  background-color: black; }
 
 li {
   list-style: none; }
@@ -28,13 +36,9 @@ li {
   display: flex;
   flex-direction: row; }
 
-.header {
-  width: 100%;
-  height: 571px;
-  position: absolute; }
-
 .main_header {
-  text-align: center; }
+  text-align: center;
+  padding-block-start: 179px; }
 
 .main_header h1,
 .main_header p {
@@ -45,6 +49,7 @@ li {
   background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
   border-radius: 2.94008px;
   border-style: none;
+  padding-block-start: 12px;
   padding: 15px;
   font-weight: bold;
   font-size: 14px;
@@ -52,10 +57,10 @@ li {
   text-align: center; }
 
 .scroll_button {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-block-start: 140px; }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-block-start: 140px;
+  padding-block-end: 40px; }
 
 .scroll_button a {
   color: white;
@@ -68,17 +73,55 @@ li {
 .bunners li::before {
   content: "⚪"; }
 
-.sos {
-  text-align: center; }
-
-.sos_group--header,
-.sos_group--paragraph,
+#sos-headings,
 .sos_content--paragraph {
   color: #ffffff; }
+
+#sos-headings {
+  margin: auto;
+  padding: 40px;
+  padding-block-end: 0;
+  border-bottom: 2px solid white; }
 
 .sos_group--paragraph {
   font-size: 33px;
   text-transform: uppercase; }
+
+.sos_content {
+  margin: auto;
+  padding: 15px;
+  padding-inline-start: 5rem; }
+
+.sos_list-img {
+  position: relative;
+  height: 271px;
+  list-style: none;
+  padding: 0rem;
+  right: 0; }
+
+.sos_image1 {
+  position: absolute;
+  z-index: 3;
+  height: 271px;
+  overflow: hidden; }
+
+.sos_image2 {
+  position: absolute;
+  z-index: 2;
+  left: 42px;
+  top: 14px;
+  height: 252px; }
+
+.sos_image3 {
+  position: absolute;
+  z-index: 1;
+  top: 28px;
+  left: 57px;
+  height: 229px; }
+
+img {
+  max-width: 100%;
+  border-radius: 6px; }
 
 .feature {
   text-align: center;
@@ -160,11 +203,6 @@ summary {
   background-color: #FFB548;
   border-radius: 2.94008px;
   border-style: none; }
-
-footer {
-  background-color: black;
-  padding-top: calc(100% * 3 / 4);
-  text-align: center; }
 
 .logo {
   background-image: url(../../webroot/images/logo.png);

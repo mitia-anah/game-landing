@@ -1,12 +1,7 @@
 @import '../variable/variable';
-.header {
-    width: 100%;
-    height: $header-height;
-    position: absolute;
-}
-
 .main_header {
     text-align: center;
+    padding-block-start: 179px;
 }
 
 .main_header h1,
@@ -19,6 +14,7 @@
     background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
     border-radius: 2.94008px;
     border-style: none;
+    padding-block-start: 12px;
     padding: 15px;
     font-weight: bold;
     font-size: 14px;
@@ -27,10 +23,10 @@
 }
 
 .scroll_button {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding-block-start: 140px;
+    padding-block-end: 40px;
 }
 
 .scroll_button a {
