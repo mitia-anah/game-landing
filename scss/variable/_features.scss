@@ -1,7 +1,12 @@
 @import "../variable/variable";
 .feature {
     text-align: center;
-    background-color: lightgrey
+    background-image: url(../../webroot/images/feature-bg-crp.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-inline-end: 219px;
+    padding-block-end: 515px;
+    opacity: 0.5;
 }
 
 .feature_title,
