@@ -108,8 +108,7 @@ li {
   z-index: 3;
   top: 0;
   left: 0;
-  right: calc(100% * 24 / 249);
-  opacity: 0.5; }
+  right: calc(100% * 24 / 249); }
 
 .sos_image2 {
   top: 50%;
@@ -144,13 +143,26 @@ img {
   content: "⚪"; }
 
 .feature {
-  text-align: center;
-  background-image: url(../../webroot/images/feature-bg-crp.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  padding-inline-end: 219px;
-  padding-block-end: 515px;
-  opacity: 0.5; }
+  padding-right: calc(93px + 212px); }
+
+.feature > img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%; }
+
+figure {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0; }
+
+aside {
+  padding: 1rem;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  left: 40%;
+  padding-top: calc(calc(50% * 3 / 10) + 1rem); }
 
 .feature_title,
 .feature_title--paragraph,
@@ -163,7 +175,8 @@ img {
 summary {
   color: #FFB548;
   font-size: 21px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-block-end: 2rem; }
 
 .requirements {
   text-align: center;
