@@ -143,26 +143,14 @@ img {
   content: "⚪"; }
 
 .feature {
-  padding-right: calc(93px + 212px); }
+  display: flex;
+  flex-direction: row-reverse;
+  padding-inline-start: 0; }
 
 .feature > img {
   max-width: 100%;
   width: 100%;
   height: 100%; }
-
-figure {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0; }
-
-aside {
-  padding: 1rem;
-  position: absolute;
-  top: 40%;
-  right: 0;
-  left: 40%;
-  padding-top: calc(calc(50% * 3 / 10) + 1rem); }
 
 .feature_title,
 .feature_title--paragraph,
