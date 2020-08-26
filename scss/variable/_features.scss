@@ -1,8 +1,11 @@
 @import "../variable/variable";
 .feature {
     // padding-right: calc(93px + 212px);
-    display: flex;
-    flex-direction: row-reverse;
+    background-image: radial-gradient(17.45% 34.77% at 31.45% 40.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%), url(../../webroot/images/feature-bg-crp.png);
+    background-position: 0 0, 0% 50%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, auto 100%;
+    padding-block-end: $feature-height;
     padding-inline-start: 0;
 }
 
@@ -18,15 +21,39 @@
     color: $text-color;
 }
 
-.feature_title--paragraph {
-    font-size: $heading-size;
-}
-
-summary {
+#ftr-list {
     color: $summary-color;
     font-size: $header-font-size;
     text-transform: $uppercase-text;
     padding-block-end: 2rem;
+}
+
+.feature-content>ul>li:first-child>h4::before {
+    content: "⚪";
+    padding-inline-end: 8px;
+}
+
+.feature-content>ul>li:nth-last-of-type(2)>h4::before,
+.feature-content>ul>li:nth-of-type(3)>h4::before {
+    content: "⚪";
+    color: none;
+    padding-inline-end: 8px;
+}
+
+.feature-content {
+    padding-block-start: 82px;
+}
+
+.feature-content>header {
+    padding-inline-start: 116px;
+}
+
+.feature-content>ul {
+    padding-inline-start: 124.04px;
+}
+
+.feature_title--paragraph {
+    font-size: $heading-size;
 }
 
 // height: 1000vw * 388/343

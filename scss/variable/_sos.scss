@@ -1,4 +1,14 @@
 @import "../variable/variable";
+.sos {
+    background-image: url(../../webroot/images/royal-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: relative;
+}
+
 #sos-headings,
 .sos_content--paragraph {
     color: $text-color;

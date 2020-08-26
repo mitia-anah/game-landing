@@ -1,7 +1,10 @@
 @import "../variable/variable";
 .requirements {
+    background-image: url(../../webroot/images/requirement-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
-    background-color: rgba(255, 192, 203, 0.5);
+    padding-block-end: $requirement-height;
 }
 
 .requirement_title,
@@ -10,6 +13,19 @@
     text-transform: $uppercase-text;
 }
 
+#rqt-list {
+    color: $summary-color;
+}
+
 .requerement_paragraph {
     font-size: $heading-size;
+}
+
+.requirement-list:not(:nth-last-of-type(5)) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.requirement-list li:not(:nth-last-of-type(1)) {
+    border: 0.504234px solid #979797;
 }
