@@ -18,15 +18,6 @@ body > header {
   background-size: cover;
   margin: 0 auto; }
 
-main {
-  background-image: url(../../webroot/images/royal-img.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 0;
-  right: 0;
-  left: 0;
-  position: relative; }
-
 footer {
   background-size: cover;
   top: 0;
@@ -76,6 +67,15 @@ li {
 
 .bunners li::before {
   content: "⚪"; }
+
+.sos {
+  background-image: url(../../webroot/images/royal-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: relative; }
 
 #sos-headings,
 .sos_content--paragraph {
@@ -143,8 +143,11 @@ img {
   content: "⚪"; }
 
 .feature {
-  display: flex;
-  flex-direction: row-reverse;
+  background-image: radial-gradient(17.45% 34.77% at 31.45% 40.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%), url(../../webroot/images/feature-bg-crp.png);
+  background-position: 0 0, 0% 50%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, auto 100%;
+  padding-block-end: 515px;
   padding-inline-start: 0; }
 
 .feature > img {
@@ -157,26 +160,58 @@ img {
 .feature_paragraph {
   color: #ffffff; }
 
-.feature_title--paragraph {
-  font-size: 33px; }
-
-summary {
+#ftr-list {
   color: #FFB548;
   font-size: 21px;
   text-transform: uppercase;
   padding-block-end: 2rem; }
 
+.feature-content > ul > li:first-child > h4::before {
+  content: "⚪";
+  padding-inline-end: 8px; }
+
+.feature-content > ul > li:nth-last-of-type(2) > h4::before,
+.feature-content > ul > li:nth-of-type(3) > h4::before {
+  content: "⚪";
+  color: none;
+  padding-inline-end: 8px; }
+
+.feature-content {
+  padding-block-start: 82px; }
+
+.feature-content > header {
+  padding-inline-start: 116px; }
+
+.feature-content > ul {
+  padding-inline-start: 124.04px; }
+
+.feature_title--paragraph {
+  font-size: 33px; }
+
 .requirements {
+  background-image: url(../../webroot/images/requirement-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
-  background-color: rgba(255, 192, 203, 0.5); }
+  padding-block-end: 719px; }
 
 .requirement_title,
 .requerement_paragraph {
   color: #ffffff;
   text-transform: uppercase; }
 
+#rqt-list {
+  color: #FFB548; }
+
 .requerement_paragraph {
   font-size: 33px; }
+
+.requirement-list:not(:nth-last-of-type(5)) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+.requirement-list li:not(:nth-last-of-type(1)) {
+  border: 0.504234px solid #979797; }
 
 .testemonials {
   text-align: center;
