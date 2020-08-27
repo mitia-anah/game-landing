@@ -1,13 +1,22 @@
 @import '../variable/variable';
 .testemonials {
+    background-image: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%), url(../../webroot/images/testml-bg.png);
+    background-size: cover, cover;
+    background-position: 0 0, 0% 100%;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.test-contents {
+    padding-block-start: 36.99px;
+    padding-inline-start: 15.35px;
     text-align: center;
-    background-color: rgba(255, 255, 0, 0.5);
 }
 
 .testemonial_title,
 .testemonial_paragraph1,
 .testemonial_paragraph2 {
     color: $text-color;
+    text-align: left;
 }
 
 .testemonial_title,
@@ -19,9 +28,73 @@
     font-size: $heading-size;
 }
 
+.test-btn {
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    border-radius: 2.94008px;
+    border-style: none;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+    padding-inline-end: 25px;
+    padding-inline-start: 33px;
+}
+
+.test-btn a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+.quotes {
+    display: block;
+    padding: 15px;
+    padding-inline-start: 0;
+}
+
+.quotes li {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding-inline-end: 15px;
+    margin: 1rem;
+    padding-block-start: 5px;
+}
+
+.profile::before {
+    content: " ";
+    background-position: 10%;
+    padding-block-start: 13px;
+    background-repeat: no-repeat;
+}
+
+.profile1 {
+    background-image: url(../../webroot/images/evan-lahti.png);
+    background-repeat: no-repeat;
+}
+
+.profile2 {
+    background-image: url(../../webroot/images/jada-griffin.png);
+    background-repeat: no-repeat;
+}
+
+.profile3 {
+    background-image: url(../../webroot/images/aaron-williams.png);
+    background-repeat: no-repeat;
+}
+
 .profile a {
     text-decoration: none;
     text-transform: $uppercase-text;
     color: $testemonials-link;
     font-size: $header-font-size;
+}
+
+small,
+.profile~p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+blockquote {
+    color: $text-color;
 }
