@@ -3,25 +3,45 @@
     background-image: url(../../webroot/images/requirement-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
     padding-block-end: $requirement-height;
+}
+
+.rqt-contents {
+    padding-block-start: 69px;
+    margin: auto;
 }
 
 .requirement_title,
 .requerement_paragraph {
     color: $text-color;
     text-transform: $uppercase-text;
+    text-align: center;
 }
 
 #rqt-list {
     color: $summary-color;
 }
 
-.requerement_paragraph {
-    font-size: $heading-size;
+#rqt-list~p {
+    color: $text-color;
 }
 
-.requirement-list:not(:nth-last-of-type(5)) {
+.requerement_paragraph {
+    font-size: $heading-size;
+    margin: 0;
+}
+
+.requirement-list {
+    padding-block-start: 50.46px;
+    padding: 40px;
+}
+
+.requirement-list li {
+    padding: 9px;
+    border: 1px solid grey;
+}
+
+.requirement-list:not(:nth-of-type(5)) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
