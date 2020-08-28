@@ -275,6 +275,20 @@ summary {
   padding-block-start: 13px;
   background-repeat: no-repeat; }
 
+.quote3,
+.quote2,
+.quote1 {
+  position: relative; }
+
+.quote2 > img,
+.quote3 > img,
+.quote1 > img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 10%;
+  top: 10%; }
+
 .profile1 {
   background-image: url(../../webroot/images/evan-lahti.png);
   background-repeat: no-repeat; }
