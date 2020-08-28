@@ -147,8 +147,17 @@ img {
   background-position: 0 0, 0% 50%;
   background-repeat: no-repeat, no-repeat;
   background-size: cover, auto 100%;
-  padding-block-end: 515px;
-  padding-inline-start: 0; }
+  padding-block-end: 515px; }
+
+.feature-content {
+  padding-block-start: 82.04px;
+  padding-inline-start: 116.19px; }
+
+summary::-webkit-details-marker {
+  display: none; }
+
+summary {
+  color: #FFB548; }
 
 .feature > img {
   max-width: 100%;
@@ -165,25 +174,6 @@ img {
   font-size: 21px;
   text-transform: uppercase;
   padding-block-end: 2rem; }
-
-.feature-content > ul > li:first-child > h4::before {
-  content: "⚪";
-  padding-inline-end: 8px; }
-
-.feature-content > ul > li:nth-last-of-type(2) > h4::before,
-.feature-content > ul > li:nth-of-type(3) > h4::before {
-  content: "⚪";
-  color: none;
-  padding-inline-end: 8px; }
-
-.feature-content {
-  padding-block-start: 82px; }
-
-.feature-content > header {
-  padding-inline-start: 116px; }
-
-.feature-content > ul {
-  padding-inline-start: 124.04px; }
 
 .feature_title--paragraph {
   font-size: 33px; }
