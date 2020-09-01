@@ -11,12 +11,23 @@ body {
 body > header {
   background-image: url(../../webroot/images/masthead-small.png);
   background-repeat: no-repeat;
-  top: 0;
+  top: 18px;
   left: 0;
   right: 0;
   position: relative;
+  padding-bottom: 571px;
   background-size: cover;
   margin: 0 auto; }
+
+@media (min-width: 1000px) {
+  body > header {
+    background-image: url(../../webroot/images/header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 42px;
+    left: 0;
+    right: 0; } }
 
 footer {
   background-size: cover;
@@ -85,7 +96,8 @@ li {
   margin: auto;
   padding: 40px;
   padding-block-end: 0;
-  border-bottom: 2px solid white; }
+  border-bottom: 2px solid white;
+  margin: 1rem; }
 
 .sos_group--paragraph {
   font-size: 33px;
@@ -375,6 +387,69 @@ blockquote {
   padding-inline-start: 93px;
   padding-inline-end: 120px; }
 
+footer {
+  background: radial-gradient(78.66% 177.87% at 19.56% 37.57%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%), black;
+  padding-block-end: 30px; }
+
+.footer-content {
+  padding-block-start: 60px;
+  padding-inline-end: 30px; }
+
+.small {
+  text-align: center; }
+
 .logo {
-  background-image: url(../../webroot/images/logo.png);
-  background-repeat: no-repeat; }
+  margin: 0;
+  position: absolute;
+  left: 45%; }
+
+.first-nav {
+  padding-block-start: 60px; }
+
+.third-nav {
+  padding-block-end: 20px;
+  border-bottom: solid 1px lightgrey;
+  margin-inline-start: 1rem;
+  margin-inline-end: 1rem;
+  padding-inline-end: 0; }
+
+.first-nav a,
+.second-nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.first-nav,
+.second-nav,
+.third-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.third-nav {
+  padding-inline-start: 0;
+  padding: 30px; }
+
+.third-nav a {
+  visibility: hidden; }
+
+.last-nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
+.last-nav li {
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 30px; }
+
+.last-nav li:nth-of-type(2)::before {
+  content: "";
+  border-left: solid 1px lightgrey;
+  padding-inline-end: 1rem; }
+
+.last-nav li:nth-of-type(2)::after {
+  content: "";
+  border-right: solid 1px lightgrey;
+  padding-inline-start: 1rem; }
