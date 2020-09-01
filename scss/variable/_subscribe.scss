@@ -1,7 +1,7 @@
 @import "../variable/variable";
 .subscribe {
-    background: radial-gradient(31.43% 32.19% at 22% 48%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%), url(../../webroot/images/subscribe-mobile.png);
-    background-position: 0 0, 0% 50%;
+    background: radial-gradient(29.43% 47.19% at 6% 19%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%), url(../../webroot/images/subscribe-mobile.png);
+    background-position: 0 0, 0% 0%;
     background-repeat: no-repeat, no-repeat;
     background-size: cover, auto 70%;
     padding-block-end: $subscribe-height;
@@ -11,8 +11,8 @@
 .subscribe-content {
     position: absolute;
     left: 126px;
-    padding-top: 39px;
-    padding-bottom: 20px;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 .subscribe_title,
@@ -28,6 +28,7 @@
 .subscribe_title,
 .subscribe_paragraph1 {
     text-transform: $uppercase-text;
+    margin: 0;
 }
 
 .subscribe_paragraph1 {
@@ -39,16 +40,14 @@
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    padding-block-start: 40px;
     top: 76%;
-    margin: 0 auto;
 }
 
 .buttons>ul {
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0;
-    margin-inline-end: 0p;
+    margin-inline-end: 0;
     padding-inline-start: 40px;
 }
 
@@ -58,8 +57,11 @@
     border-radius: $subscribe-border-radius;
     border-style: none;
     padding: 16px;
+    margin-block-end: 1rem;
 }
 
 .submit_btn {
     background-color: $summary-color;
+    padding-inline-start: 93px;
+    padding-inline-end: 120px;
 }
