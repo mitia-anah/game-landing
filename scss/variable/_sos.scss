@@ -9,12 +9,12 @@
     position: relative;
 }
 
-#sos-headings,
+.sos-headings,
 .sos_content--paragraph {
     color: $text-color;
 }
 
-#sos-headings {
+.sos-headings {
     margin: auto;
     padding: 40px;
     padding-block-end: 0;
@@ -22,7 +22,7 @@
     margin: 1rem;
 }
 
-.sos_group--paragraph {
+.sos_paragraph {
     font-size: $heading-size;
     text-transform: $uppercase-text;
 }
@@ -89,4 +89,35 @@ img {
 
 .sos_scroll-btns li::before {
     content: "⚪";
+}
+
+@media (min-width: 800px) {
+    .sos {
+        background: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%), url(../../webroot/images/sos-bg-desktop.png);
+        opacity: 0.9;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0;
+        right: 0;
+        left: 0;
+        position: relative;
+    }
+    .content-wrap {
+        display: flex;
+        flex-direction: row;
+    }
+    .sos_image1 {
+        z-index: 3;
+        left: 0;
+        right: calc(100% * 24 / 249);
+    }
+    .sos_image2 {
+        top: 65%;
+        padding-top: 30%;
+        z-index: 2;
+        left: calc(100% * 12 / 249);
+        right: calc(100% * 12 / 249);
+        transform: translateY(-50%) scale(calc((273 - 48) / 273));
+        transform-origin: 100% 0%;
+    }
 }
