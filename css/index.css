@@ -19,7 +19,7 @@ body > header {
   background-size: cover;
   margin: 0 auto; }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   body > header {
     background-image: url(../../webroot/images/header-desktop.png);
     background-repeat: no-repeat;
@@ -88,18 +88,18 @@ li {
   left: 0;
   position: relative; }
 
-#sos-headings,
+.sos-headings,
 .sos_content--paragraph {
   color: #ffffff; }
 
-#sos-headings {
+.sos-headings {
   margin: auto;
   padding: 40px;
   padding-block-end: 0;
   border-bottom: 2px solid white;
   margin: 1rem; }
 
-.sos_group--paragraph {
+.sos_paragraph {
   font-size: 33px;
   text-transform: uppercase; }
 
@@ -154,6 +154,32 @@ img {
 .sos_scroll-btns li::before {
   content: "⚪"; }
 
+@media (min-width: 800px) {
+  .sos {
+    background: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%), url(../../webroot/images/sos-bg-desktop.png);
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: relative; }
+  .content-wrap {
+    display: flex;
+    flex-direction: row; }
+  .sos_image1 {
+    z-index: 3;
+    left: 0;
+    right: calc(100% * 24 / 249); }
+  .sos_image2 {
+    top: 65%;
+    padding-top: 30%;
+    z-index: 2;
+    left: calc(100% * 12 / 249);
+    right: calc(100% * 12 / 249);
+    transform: translateY(-50%) scale(calc((273 - 48) / 273));
+    transform-origin: 100% 0%; } }
+
 .feature {
   background-image: radial-gradient(37.45% 34.77% at 31.45% 40.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%), url(../../webroot/images/feature-bg-crp.png);
   background-position: 0 0, 0% 50%;
@@ -189,6 +215,14 @@ summary {
 
 .feature_title--paragraph {
   font-size: 33px; }
+
+@media (min-width: 1000px) {
+  .feature {
+    background-image: radial-gradient(37.45% 34.77% at 31.45% 40.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%), url(../../webroot/images/feature-bg-crp.png);
+    background-position: 0 0, 0% 50%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, auto 100%;
+    padding-block-end: 515px; } }
 
 .requirements {
   background-image: url(../../webroot/images/requirement-bg.png);
