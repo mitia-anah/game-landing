@@ -17,7 +17,7 @@ body>header {
     left: 0;
     right: 0;
     position: relative;
-    padding-bottom: $header-height;
+    // padding-bottom: $header-height;
     background-size: cover;
     margin: 0 auto;
 }
@@ -28,9 +28,10 @@ body>header {
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        top: 42px;
+        top: 25px;
         left: 0;
         right: 0;
+        padding-block-end: 17%;
     }
 }
 

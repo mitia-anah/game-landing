@@ -6,6 +6,7 @@
     top: 0;
     right: 0;
     left: 0;
+    padding-bottom: 10%;
     position: relative;
 }
 
@@ -14,9 +15,18 @@
     color: $text-color;
 }
 
+.sos_content--paragraph u {
+    text-decoration-color: $summary-color;
+}
+
+.sos_sub-content {
+    padding: 40px;
+    padding-block-start: 0;
+}
+
 .sos-headings {
     margin: auto;
-    padding: 40px;
+    padding-block-start: 20px;
     padding-block-end: 0;
     border-bottom: 2px solid white;
     margin: 1rem;
@@ -29,6 +39,36 @@
 
 .sos_content {
     padding: 2rem 40px;
+}
+
+.bunners {
+    display: flex;
+    position: relative;
+    top: -3rem;
+    justify-content: center;
+    padding-inline-start: 0;
+}
+
+.bunners li {
+    border: 1px solid #ffffff;
+    padding: 7px;
+    width: 0;
+    margin: 10px;
+    border-radius: 50%;
+    height: 0;
+    display: block;
+}
+
+.bunners li:nth-of-type(1) {
+    background: #ffffff;
+}
+
+.bunners>li:nth-child(1)>a::after {
+    border-left: red 1px solid;
+}
+
+.bunners li a {
+    visibility: hidden;
 }
 
 .sos_list-img {
@@ -94,19 +134,30 @@ img {
 @media (min-width: 800px) {
     .sos {
         background: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%), url(../../webroot/images/sos-bg-desktop.png);
-        opacity: 0.9;
         background-repeat: no-repeat;
-        background-size: cover;
-        top: 0;
-        right: 0;
-        left: 0;
-        position: relative;
     }
     .content-wrap {
         display: flex;
         flex-direction: row;
+        padding-block-start: 12%;
+    }
+    .sos-headings {
+        margin-inline-start: 5rem;
+    }
+    .sos_paragraph {
+        max-width: 50%;
+        margin-block-end: 0;
+    }
+    .sos_sub-content {
+        max-width: 50%;
+        padding-inline-start: 25%;
+        padding-block-start: 20px;
+    }
+    .sos_list-img {
+        padding: 160px;
     }
     .sos_image1 {
+        padding-top: 10%;
         z-index: 3;
         left: 0;
         right: calc(100% * 24 / 249);
@@ -114,10 +165,15 @@ img {
     .sos_image2 {
         top: 65%;
         padding-top: 30%;
-        z-index: 2;
-        left: calc(100% * 12 / 249);
-        right: calc(100% * 12 / 249);
-        transform: translateY(-50%) scale(calc((273 - 48) / 273));
-        transform-origin: 100% 0%;
+    }
+    .sos_image3 {
+        top: 12%;
+    }
+    figure {
+        background-image: url(../../webroot/images/switch.svg);
+        background-repeat: no-repeat;
+        background-size: 50px 30px;
+        padding-inline-end: 50px;
+        background-position: 100% 40%;
     }
 }
