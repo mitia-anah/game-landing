@@ -10,6 +10,13 @@
     position: relative;
 }
 
+.large-paragraph {
+    font-family: 'Bebas Neue';
+    font-size: $large-paragraph;
+    letter-spacing: 3px;
+    text-transform: $uppercase-text;
+}
+
 .sos-headings,
 .sos_content--paragraph {
     color: $text-color;
@@ -30,11 +37,6 @@
     padding-block-end: 0;
     border-bottom: 2px solid white;
     margin: 1rem;
-}
-
-.sos_paragraph {
-    font-size: $heading-size;
-    text-transform: $uppercase-text;
 }
 
 .sos_content {
