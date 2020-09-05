@@ -248,12 +248,19 @@ img {
 details {
   position: relative; }
 
+details[open] > summary::before {
+  background-color: #ffffff; }
+
+details:first-of-type::before {
+  top: 1rem;
+  position: absolute; }
+
 details::before {
   content: " ";
   border: 1px solid white;
   height: 100%;
   position: absolute;
-  top: 0;
+  top: 1rem;
   left: -1rem;
   bottom: 0; }
 
