@@ -18,7 +18,7 @@ body {
   margin: 0; }
 
 body > header {
-  background-image: url(../../webroot/images/masthead-small.png);
+  background-image: url(./images/masthead-small.png);
   background-repeat: no-repeat;
   top: 18px;
   left: 0;
