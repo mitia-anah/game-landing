@@ -1,6 +1,6 @@
 @import '../variable/variable';
 .testemonials {
-    background-image: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%), url(../../webroot/images/testml-bg.png);
+    background-image: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%), url(../images/testml-bg.png);
     background-size: cover, cover;
     background-position: 0 0, 0% 100%;
     background-repeat: no-repeat, no-repeat;
@@ -79,17 +79,17 @@
 }
 
 .profile1 {
-    background-image: url(../../webroot/images/evan-lahti.png);
+    background-image: url(../images/evan-lahti.png);
     background-repeat: no-repeat;
 }
 
 .profile2 {
-    background-image: url(../../webroot/images/jada-griffin.png);
+    background-image: url(../images/jada-griffin.png);
     background-repeat: no-repeat;
 }
 
 .profile3 {
-    background-image: url(../../webroot/images/aaron-williams.png);
+    background-image: url(../images/aaron-williams.png);
     background-repeat: no-repeat;
 }
 
