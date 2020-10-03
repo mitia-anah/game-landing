@@ -89,7 +89,7 @@ li {
   text-decoration: none; }
 
 .sos {
-  background-image: url(../../webroot/images/royal-img.png);
+  background-image: url(../images/royal-img.png);
   background-repeat: no-repeat;
   background-size: cover;
   top: 0;
