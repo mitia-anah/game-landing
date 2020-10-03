@@ -228,7 +228,7 @@ img {
   .sos_image3 {
     top: 12%; }
   figure {
-    background-image: url(../../webroot/images/switch.svg);
+    background-image: url(../images/switch.svg);
     background-repeat: no-repeat;
     background-size: 50px 30px;
     padding-inline-end: 50px;
@@ -461,7 +461,7 @@ blockquote {
   color: #ffffff; }
 
 .subscribe {
-  background: radial-gradient(29.43% 47.19% at 6% 19%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%), url(../images/subscribe-mobile.png);
+  background: radial-gradient(29.43% 47.19% at 6% 19%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%), url("../images/subscribe-mobile.png");
   background-position: 0 0, 0% 0%;
   background-repeat: no-repeat, no-repeat;
   background-size: cover, auto 70%;
