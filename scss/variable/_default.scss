@@ -22,7 +22,7 @@ body {
 }
 
 body>header {
-    background-image: url(./images/masthead-small.png);
+    background-image: url(../images/masthead-small.png);
     background-repeat: no-repeat;
     top: 18px;
     left: 0;
@@ -35,7 +35,7 @@ body>header {
 
 @media (min-width: 800px) {
     body>header {
-        background-image: url(../../webroot/images/header-desktop.png);
+        background-image: url(../images/header-desktop.png);
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
